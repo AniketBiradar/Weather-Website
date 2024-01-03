@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherStyle.css">
+    <link rel="icon" href="image/Logo.png">
 </head>
 <body>
-    
+    <div class="mdiv">
+        <div class="weather_app">
+            <h2 align = "center">WEATHER FORECAST</h2>
+            <div class="ip">
+                <input type="text" id="userText">
+                <button onclick="getWeatherData();"><img src="image/search_icon.png" alt="search_icon" height="40px"></button>
+            </div>
+            <div class="info" align = "center">
+                <img src="image/cloud.png" alt="weather" class="weather_img">
+                <h1 id="temp">27°C</h1>
+                <h2 id="city">PUNE</h2>
+            </div>
+            <div class="info2">
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
