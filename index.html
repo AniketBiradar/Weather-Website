@@ -6,8 +6,29 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="weatherStyle.css">
     <link rel="icon" href="image/Logo.png">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
+    <video autoplay muted loop>
+        <source src="image/backGround.mp4" type="video/mp4">
+    </video>
     <div class="mdiv">
         <div class="weather_app">
             <h2 align = "center">WEATHER FORECAST</h2>
@@ -21,9 +42,19 @@
                 <h2 id="city">PUNE</h2>
             </div>
             <div class="info2">
-                
+                <div class="humditiy">
+                    <img src="image/humidity.png" alt="humditiy-icon" class="humi">
+                    <h3>HUMIDITY</h3>
+                    <h4 id="humditiy-info">50%</h4>
+                </div>
+                <div class="wind">
+                    <img src="image/mist.png" alt="wind-icon" class="humi">
+                    <h3>WIND</h3>
+                    <h4 id="wind-info">4 Km/h</h4>
+                </div>
             </div>
         </div>
     </div>
+    <script src="weatherScript.js"></script>
 </body>
 </html>
