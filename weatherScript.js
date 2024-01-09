@@ -39,6 +39,9 @@ async function getWeatherData() {
         else if(data.weather[0].main=="Rain"){
             weather_img.src = "image/rain.png"
         }
+        else if(data.weather[0].cod=="404"){
+            weather_img.src = "image/rain.png"
+        }
         console.log(data)
     }
 }
